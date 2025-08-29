@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Selamawit Elias Tefera</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dark">
+<header class="nav">
+  <div class="nav-inner container">
+    <a class="logo" href="index.html">SELAMAWIT'S PORTFOLIO</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container contact-page">
+  <h1>Contact</h1>
+  <p>I'd love to hear about new opportunities or collaborations. Email me at <a class = "my_email" href="mailto:selitaelias@gmail.com">selitaelias@gmail.com</a> or use the form below.</p>
+
+  <form id="contact-form" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+    <input type="hidden" name="form-name" value="contact">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required minlength="2" />
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button class="btn primary" type="submit">Send Message</button>
+    <p id="form-msg" class="form-msg" aria-live="polite"></p>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Selamawit Elias Tefera</p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
