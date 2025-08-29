@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
       fetch("/", {
         method: "POST",
-        body: formData
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString()
       })
       .then(function(){
         msgEl.textContent = "Message sent successfully!";
